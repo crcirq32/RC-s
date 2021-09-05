@@ -135,6 +135,7 @@ alias sysusrinfo='sed -e 's/:. :/:/' /etc/passwd'
 alias ttrace='touch /tmp/strace.txt && strace -d -v -o /tmp/strace.txt $1'
 alias cattrace='cat /tmp/strace.txt'
 alias ufwlog='sudo cat /var/log/ufw.log | grep 'BLOCK' | less +G'
+alias find1='find $1 / 2>/dev/null | grep $1'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
