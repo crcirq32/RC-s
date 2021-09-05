@@ -106,8 +106,6 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-
-
 alias bashrc='source ~/.bashrc'
 alias dropcaches='sudo sh -c "/usr/bin/echo 1 > /proc/sys/vm/drop_caches && /usr/bin/echo 2 > /proc/sys/vm/drop_caches && /usr/bin/echo 3 > /proc/sys/vm/drop_caches"'
 alias EdWeb='cd ~/Desktop/Website/ && sudo vi -p ./*.html ./*.css'   
@@ -136,6 +134,7 @@ alias ttrace='touch /tmp/strace.txt && strace -d -v -o /tmp/strace.txt $1'
 alias cattrace='cat /tmp/strace.txt'
 alias ufwlog='sudo cat /var/log/ufw.log | grep 'BLOCK' | less +G'
 alias find1='find $1 / 2>/dev/null | grep $1'
+alias getvimupdate='git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sudo sh ~/.vim_runtime/install_awesome_vimrc.sh'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
