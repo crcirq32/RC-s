@@ -135,6 +135,7 @@ alias cattrace='cat /tmp/strace.txt'
 alias ufwlog='sudo cat /var/log/ufw.log | grep 'BLOCK' | less +G'
 alias find1='find $1 / 2>/dev/null | grep $1'
 alias getvimupdate='git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sudo sh ~/.vim_runtime/install_awesome_vimrc.sh'
+alias gtstky='find / -perm /6000 2</dev/null'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
