@@ -127,6 +127,7 @@ alias cp='sudo cp'
 alias echo='sudo echo'
 
 alias fdsid='sudo find / -user root -perm -4000'
+alias gtstky='find / -perm /6000 2</dev/null'
 alias psp='ps -p $1 -o comm='
 alias logusr='last | sed '/^root /d''
 alias sysusrinfo='sed -e 's/:. :/:/' /etc/passwd'
@@ -135,7 +136,6 @@ alias cattrace='cat /tmp/strace.txt'
 alias ufwlog='sudo cat /var/log/ufw.log | grep 'BLOCK' | less +G'
 alias find1='find $1 / 2>/dev/null | grep $1'
 alias getvimupdate='git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sudo sh ~/.vim_runtime/install_awesome_vimrc.sh'
-alias gtstky='find / -perm /6000 2</dev/null'
 alias updateall='apt update -y && apt upgrade -y && apt full-upgrade -y && apt-get autoremove --purge -y'
 
 # enable programmable completion features (you don't need to enable
