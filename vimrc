@@ -33,4 +33,3 @@ echom '                               *6d;                               '
 
 set number
 set wrap
-set paste
