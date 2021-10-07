@@ -1,35 +1,16 @@
-echom '                               =sW<                               ' 
-echom '     .n666OOOOOOOOOOOOOOOO66%]hq}ZDq<  .ldddddddddddddddddddddMx` '
-echom '    _Q#17LLLLLLLLLLLLLLLLLLxq@Q2MRMSDp7#@aLxxxxxxxxxxxxxxxxx]Lp@9`'
-echom '    =@0~:::::::::::::::::::<f@@0DNNRMp8@#*=::::::::::::::::::re#Q`'
-echom '    =@Q~r??^:::::::::::^???xW@#0DNNNNRN@#rr?\r::::::::::::::^}K#8`'
-echom '     "mgB@z^:::::::::::xn6####0NDNNDDDNg#@#6"=:::::::::::=?nqBBl. '
-echom '        n@z^:::::::::::xnN@#RNNDNNNDDDDQ#0r-:=:::::::::=rnpB#n.   '
-echom '        n@t^:::::::::::xnD@#DNNNNDDDDQ#0r-"=::::::::::<lPQ#V.     '
-echom '        n@t^:::::::::::xnD@#DNNDDDDQ#0r-:=::::::::::>xIQ#J-       '
-echom '        n@t^:::::::::::xnD@#DDDDDQ#0r-"!::::::::::~xo0#w_         '
-echom '        n@t^:::::::::::xnD@#DND8#Dr."!::::::::::~xwN#@w           '
-echom '        n@t^:::::::::::xnN@#DQ#D*.:=::::::::::^La8@BDP6W^         '
-echom '       =0@z^:::::::::::xnN@@#D*.,=::::::::::^7f8##gNDNdG0q<       '
-echom '     =eqD@z^:::::::::::xnN@R*."!::::::::::!\hg@#8NDDDNDR%G0q<     '
-echom '   =hqYn8@z^:::::::::::xnI*."!::::::::::=?V6##8DDDNNNDDNNRWPDW^   '
-echom ' =epLnZNB@t^:::::::::::xu:"!::::::::::=?Vd##8NDNNNNNNNNNDNNR%GDq^ '
-echom '`*R#Qg0NB@t^:::::::::::vr=::::::::::~vI0##8DDDDNNNNNNNNNDDND8B#d< '
-echom '  `r9BQ8B@z^:::::::::::::::::::::*Ve60##QDNDDDDNNNNNNNDDD08B#M<   '
-echom '     *OB#@z^::::::::::::::::::::*6?^^W#DDDDDNNNNNNNDNDD08B#d;     '
-echom '       *8@t^:::::::::::::::::::*D?==rQgNDDNNNNNNNDDDDDgB#M;       '
-echom '        n@t^:::::::::::::::::*lW#BggQgNDNNNNNNNNNDDDgQ#M>         '
-echom '        n@t^:::::::::::::::*t0GDDZ%8Q0QMZMZOQ0gQdZ%g#BmtlllVY`    '
-echom '        n@t^::::::::::::=?VO##gr::rB08BZ=:::?}Y<::::?7x=::::dx    '
-echom '        n@t^:::::::::::rV6#@QBh::!NQDDBx::vqPGZx::=tJn2t:::v6`    '
-echom '        n@t^:::::::::<n6#@Q08D!::oBNNBa::~8g8BB^::nG  xl::~N<     '
-echom '        n@t^:::::::;xa#@B0N0B?::!B0N8g~::f#Q#@V::^0" ,0:::tX      '
-echom '        n@t^:::::~xa8#BBQgDBV:::s8N0Bv::|##8K9=::qY  KV::rD_      '
-echom '        n@W^?rr*vf8#W=.}QB#d=::~PBDBs"""n#V`Rr""^0J r6=""70?      '
-echom '        -vpQgggg8Qz-     *D#QQ8g88NQ###ML*  x]]]xx_ =]]]]xv`      '
-echom '                          `*OBQ80D8B#M>                           '
-echom '                            `*OBQB#M;                             '
-echom '                               *6d;                               '
-
 set number
-set wrap
+
+"Vim-plug section
+call plug#begin('~/.vim/plugged')
+ 
+Plug 'scrooloose/nerdtree'
+Plug 'junegunn/vim-easy-align'
+Plug ‘junegunn/vim-github-dashboard’
+
+Plug ‘ycm-core/YouCompleteMe', { 'do': './install.py' }
+  
+call plug#end() 
+"TODO: . ~/.vim
+"TODO: :PlugInstall
+"https://linuxhint.com/vim_install_plugins/
+"https://github.com/junegunn/vim-plug
