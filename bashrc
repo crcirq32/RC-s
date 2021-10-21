@@ -133,8 +133,11 @@ alias find1='find $1 / 2>/dev/null | grep $1'
 alias getvimupdate='git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sudo sh ~/.vim_runtime/install_awesome_vimrc.sh'
 alias updateall='apt update -y && apt upgrade -y && apt full-upgrade -y && apt-get autoremove --purge -y'
 alias TDHISTORY='echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile'
-alias jobsp='jobs -l'
-alias jobsd='jobs -d'
+alias jobsp='jobs -ld'
+alias addc='addc=$(($1 + $2)) && echo ${addc}'
+alias subc='subc=$(($1 - $2)) && echo ${subc}'
+alias divc='divc=$(($1 / $2)) && echo ${divc}'
+alias mulc='mulc=$(($1 * $2)) && echo ${mulc}'
 
 ## Git aliases
 alias g='git'
