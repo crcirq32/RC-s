@@ -138,6 +138,8 @@ alias addc='addc=$(($1 + $2)) && echo ${addc}'
 alias subc='subc=$(($1 - $2)) && echo ${subc}'
 alias divc='divc=$(($1 / $2)) && echo ${divc}'
 alias mulc='mulc=$(($1 * $2)) && echo ${mulc}'
+#use files as arguments
+alias difxxd='diff <(xxd $1) <(xxd $2)
 
 ## Git aliases
 alias g='git'
