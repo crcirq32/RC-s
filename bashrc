@@ -123,6 +123,7 @@ alias echo='sudo echo'
 
 #install dtrace
 alias dtraceDL='sudo apt-get install systemtap-sdt-dev'
+alias dtraceGIT='git clone https://github.com/dtrace4linux/linux.git'
 
 alias fdsid='sudo find / -user root -perm -4000'
 alias gtstky='find / -perm /6000 2</dev/null'
