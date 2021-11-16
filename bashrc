@@ -121,6 +121,9 @@ alias rm='sudo rm'
 alias cp='sudo cp'
 alias echo='sudo echo'
 
+#install dtrace
+alias dtraceDL='sudo apt-get install systemtap-sdt-dev'
+
 alias fdsid='sudo find / -user root -perm -4000'
 alias gtstky='find / -perm /6000 2</dev/null'
 alias psp='ps -p $1 -o comm='
