@@ -101,7 +101,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-alias bashrc='source ~/.bashrc'
+alias reloadbash='. ~/.bashrc'
 alias dropcaches='sudo sh -c "/usr/bin/echo 1 > /proc/sys/vm/drop_caches && /usr/bin/echo 2 > /proc/sys/vm/drop_caches && /usr/bin/echo 3 > /proc/sys/vm/drop_caches"'
 alias EdWeb='cd ~/Desktop/Website/ && sudo vi -p ./*.html ./*.css'   
 alias TEMP='cpu=$(</sys/class/thermal/thermal_zone0/temp) && echo "$((cpu/1000))C"'
