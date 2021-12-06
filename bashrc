@@ -125,6 +125,7 @@ alias echo='sudo echo'
 alias dtraceDL='sudo apt-get install systemtap-sdt-dev'
 alias dtraceGIT='git clone https://github.com/dtrace4linux/linux.git'
 
+alias aptsearch='apt-cache search $1'
 alias fdsid='sudo find / -user root -perm -4000'
 alias gtstky='find / -perm /6000 2</dev/null'
 alias psp='ps -p $1 -o comm='
@@ -138,10 +139,7 @@ alias getvimupdate='git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim
 alias updateall='apt update -y && apt upgrade -y && apt full-upgrade -y && apt-get autoremove --purge -y'
 alias TDHISTORY='echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile'
 alias jobsp='jobs -ld'
-alias addc='addc=$(($1 + $2)) && echo ${addc}'
-alias subc='subc=$(($1 - $2)) && echo ${subc}'
-alias divc='divc=$(($1 / $2)) && echo ${divc}'
-alias mulc='mulc=$(($1 * $2)) && echo ${mulc}'
+
 #use files as arguments
 alias difxxd='diff <(xxd $1) <(xxd $2)
 
