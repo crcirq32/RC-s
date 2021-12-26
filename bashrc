@@ -139,6 +139,8 @@ alias getvimupdate='git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim
 alias updateall='apt update -y && apt upgrade -y && apt full-upgrade -y && apt-get autoremove --purge -y'
 alias TDHISTORY='echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile'
 alias jobsp='jobs -ld'
+#nmap search
+locate -r '\.nse$' | xargs grep categories | grep 'default\|version\|safe' | grep $1
 
 #use files as arguments
 alias difxxd='diff <(xxd $1) <(xxd $2)
