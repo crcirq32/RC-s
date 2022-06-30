@@ -121,9 +121,12 @@ alias rm='sudo rm'
 alias cp='sudo cp'
 alias echo='sudo echo'
 
-#install dtrace
-alias dtraceDL='sudo apt-get install systemtap-sdt-dev'
-alias dtraceGIT='git clone https://github.com/dtrace4linux/linux.git'
+#update Kern
+alias updkern='wget https://raw.githubusercontent.com/pimline/ubuntu-mainline-kernel.sh/master/ubuntu-mainline-kernel.sh'
+alias ikern='install ubuntu-mainline-kernel.sh /usr/local/bin/'
+alias runkern='ubuntu-mainline-kernel.sh -c'
+alias inskern='ubuntu-mainline-kernel.sh -i'
+
 
 alias aptsearch='apt-cache search $1'
 alias fdsid='sudo find / -user root -perm -4000'
@@ -139,6 +142,7 @@ alias getvimupdate='git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim
 alias updateall='apt update -y && apt upgrade -y && apt full-upgrade -y && apt-get autoremove --purge -y'
 alias TDHISTORY='echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile'
 alias jobsp='jobs -ld'
+
 #nmap search
 locate -r '\.nse$' | xargs grep categories | grep 'default\|version\|safe' | grep $1
 
