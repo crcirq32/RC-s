@@ -132,19 +132,19 @@ alias aptsearch='apt-cache search $1'
 alias fdsid='sudo find / -user root -perm -4000'
 alias gtstky='find / -perm /6000 2</dev/null'
 alias psp='ps -p $1 -o comm='
-alias logusr='last | sed '/^root /d''
-alias sysusrinfo='sed -e 's/:. :/:/' /etc/passwd'
+alias logusr='last | sed "/^root /d"'
+alias sysusrinfo='sed -e "s/:. :/:/" /etc/passwd'
 alias ttrace='touch /tmp/strace.txt && strace -d -v -o /tmp/strace.txt $1'
 alias cattrace='cat /tmp/strace.txt'
-alias ufwlog='sudo cat /var/log/ufw.log | grep 'BLOCK' | less +G'
+alias ufwlog='sudo cat /var/log/ufw.log | grep "BLOCK" | less +G'
 alias find1='find $1 / 2>/dev/null | grep $1'
 alias getvimupdate='git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime && sudo sh ~/.vim_runtime/install_awesome_vimrc.sh'
 alias updateall='apt update -y && apt upgrade -y && apt full-upgrade -y && apt-get autoremove --purge -y'
-alias TDHISTORY='echo 'export HISTTIMEFORMAT="%d/%m/%y %T "' >> ~/.bash_profile'
+alias TDHISTORY='echo "export HISTTIMEFORMAT="%d/%m/%y %T " >> ~/.bash_profile'
 alias jobsp='jobs -ld'
 
 #nmap search
-locate -r '\.nse$' | xargs grep categories | grep 'default\|version\|safe' | grep $1
+#locate -r '\.nse$' | xargs grep categories | grep 'default\|version\|safe' | grep $1
 
 #use files as arguments
 alias difxxd='diff <(xxd $1) <(xxd $2)
