@@ -147,7 +147,7 @@ alias jobsp='jobs -ld'
 #locate -r '\.nse$' | xargs grep categories | grep 'default\|version\|safe' | grep $1
 
 #use files as arguments
-alias difxxd='diff <(xxd $1) <(xxd $2)
+alias difxxd='diff <(xxd $1) <(xxd $2)'
 
 ## Git aliases
 alias g='git'
