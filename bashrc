@@ -178,6 +178,18 @@ alias gpoh='git push origin HEAD'
 alias grom='git rebase origin/master'
 alias gcd='cd ~/repos/'
 
+#setup jupyter env
+
+#https://speedysense.com/install-jupyter-notebook-on-ubuntu-20-04/
+#mkdir -p ~/Desktop/notebook
+#cd ~/Desktop/notebook
+#virtualenv jupyterenv
+#source jupyterenv/bin/activate -> moves to env
+#pip install jupyter
+
+#run jupyter notebook
+#jupyter notebook
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
