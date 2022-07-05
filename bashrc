@@ -180,14 +180,15 @@ alias gcd='cd ~/repos/'
 
 #setup jupyter env
 
-#https://speedysense.com/install-jupyter-notebook-on-ubuntu-20-04/
+#Jupyter Notebooks:
+#sudo apt-get install python3-pip python3-dev
+#sudo -H pip3 install --upgrade pip
+#sudo -H pip3 install virtualenv
 #mkdir -p ~/Desktop/notebook
 #cd ~/Desktop/notebook
 #virtualenv jupyterenv
-#source jupyterenv/bin/activate -> moves to env
-#pip install jupyter
-
-#run jupyter notebook
+#source jupyterenv/bin/activate
+#pip install numpy matplotlib scipy requests
 #jupyter notebook
 
 # enable programmable completion features (you don't need to enable
