@@ -179,17 +179,10 @@ alias grom='git rebase origin/master'
 alias gcd='cd ~/repos/'
 
 #setup jupyter env
-
-#Jupyter Notebooks:
-#sudo apt-get install python3-pip python3-dev
-#sudo -H pip3 install --upgrade pip
-#sudo -H pip3 install virtualenv
-#mkdir -p ~/Desktop/notebook
-#cd ~/Desktop/notebook
-#virtualenv jupyterenv
-#source jupyterenv/bin/activate
-#pip install numpy matplotlib scipy requests
-#jupyter notebook
+alias jupnotbook='sudo apt-get install python3-pip python3-dev && sudo -H pip3 install --upgrade pip && \
+sudo -H pip3 install virtualenv && mkdir -p ~/Desktop/notebook && cd ~/Desktop/notebook \
+&& virtualenv jupyterenv && source jupyterenv/bin/activate && pip install numpy matplotlib jupyter scipy requests graphviz'
+alias startjupnotbook='jupyter notebook'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
